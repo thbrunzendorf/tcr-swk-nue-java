@@ -6,10 +6,10 @@ public class Kata {
     private String scoreB = "love";
 
     public String getScore() {
-        return this.scoreA +":"+ scoreB;
+        return this.scoreA + ":" + scoreB;
     }
 
     public void pointForA() {
-
+        scoreA = "15";
     }
 }
