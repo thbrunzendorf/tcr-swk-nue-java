@@ -2,20 +2,20 @@ package tcr;
 
 public class Kata {
 
-    private String scoreA = "love";
-    private String scoreB = "love";
+    private int scoreA = 0;
+    private int scoreB = 0;
+
+    private String scoreMapping[] =
+            new String[]{"love", "15", "30", "40"};
 
     public String getScore() {
-        return this.scoreA + ":" + scoreB;
+        return scoreMapping[scoreA]
+                + ":"
+                + scoreMapping[scoreB];
     }
 
     public void pointForA() {
-        if (scoreA.equals("15")) {
-            scoreA = "30";
-        } else if (scoreA.equals("30")) {
-            scoreA = "40";
-        } else {
-            scoreA = "15";
-        }
+        scoreA++;
     }
 }
+
