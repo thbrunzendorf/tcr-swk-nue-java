@@ -10,6 +10,8 @@ public class Kata {
     }
 
     public void pointForA() {
-        scoreA = "15";
+        if (scoreA.equals("15")) scoreA = "30";
+        else
+            scoreA = "15";
     }
 }
