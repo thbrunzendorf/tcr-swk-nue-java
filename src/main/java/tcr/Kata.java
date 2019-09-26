@@ -1,7 +1,7 @@
 package tcr;
 
 public class Kata {
-    public boolean someMethod() {
-        return true;
+    public String getScore() {
+        return "";
     }
 }
