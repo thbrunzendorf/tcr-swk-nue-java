@@ -2,6 +2,6 @@ package tcr;
 
 public class Kata {
     public String getScore() {
-        return "15:30";
+        return "love:love";
     }
 }
