@@ -22,4 +22,12 @@ public class KataTest {
         classUnderTest.pointForA();
         assertEquals("30:love", classUnderTest.getScore());
     }
+
+    @Test public void thirdPointForA() {
+        Kata classUnderTest = new Kata();
+        classUnderTest.pointForA();
+        classUnderTest.pointForA();
+        classUnderTest.pointForA();
+        assertEquals("40:love", classUnderTest.getScore());
+    }
 }
