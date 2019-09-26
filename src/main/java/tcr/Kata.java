@@ -2,11 +2,11 @@ package tcr;
 
 public class Kata {
 
-    String scoreA;
+    private String scoreA = "love";
+    private String scoreB = "love";
 
     public String getScore() {
-        scoreA = "love";
-        return this.scoreA +":"+"love";
+        return this.scoreA +":"+ scoreB;
     }
 
     public void pointForA() {
