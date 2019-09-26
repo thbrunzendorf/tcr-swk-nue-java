@@ -11,6 +11,7 @@ public class KataTest {
 
     @Test public void testSomeMethod2() {
         Kata classUnderTest = new Kata();
+        classUnderTest.pointForA();
         assertEquals("love:love", classUnderTest.getScore());
     }
 }
