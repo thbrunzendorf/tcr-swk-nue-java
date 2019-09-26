@@ -5,7 +5,8 @@ public class Kata {
     String scoreA;
 
     public String getScore() {
-        return "love:love";
+        scoreA = "love";
+        return this.scoreA +":"+"love";
     }
 
     public void pointForA() {
