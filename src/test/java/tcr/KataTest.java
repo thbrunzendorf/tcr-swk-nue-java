@@ -6,6 +6,6 @@ import static org.junit.Assert.*;
 public class KataTest {
     @Test public void testSomeMethod() {
         Kata classUnderTest = new Kata();
-        assertEquals("", classUnderTest.getScore());
+        assertEquals("15:30", classUnderTest.getScore());
     }
 }
