@@ -1,5 +1,8 @@
 plugins {
     id 'java'
+
+    // TCR Plugin
+    id "uk.co.probablyfine.gradle.test-commit-revert" version "0.3.1"
 }
 
 repositories {
@@ -14,4 +17,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+testCommitRevert {
+  commitCommand = 'git commit --all --message working'
+  revertCommand = 'git reset --hard HEAD'
 }
